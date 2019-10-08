@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style type="text/css">
+			.rect{
+				fill:lightblue;
+				stroke-width:3;
+				stroke: black;
+			}
+			.circle{
+				fill: red;
+				stroke-width:3;
+				stroke: black;
+			}
+			.triangle{
+				fill: lime;
+				stroke-width:3;
+				stroke:black
+			}
+			.textbox{
+				fill:red;
+			}
+			.path{
+				stroke:black;
+				stroke-width:3;
+				fill:none
+			}
+		</style>
+	</head>
+	<body>
+		<svg height="500" width="500">
+			<rect class="rect" width="300" height="100"/>
+			<circle class="circle" cx="150" cy="50" r="40"/>
+			<polygon class="triangle" points="200,10 250,190 160,210" transform='translate(0, 250)'/>
+			<text class="textbox" x="200" y="200" transform="rotate(30 20,40)">Conor Shortt</text>
+		</svg>
+		<svg height="500" width="500">
+			<path class="path" d="
+			M 230 230
+			A 45 45 0 1 1 275 275
+			L 275 230
+			"/>
+		</svg>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
